@@ -140,7 +140,7 @@ async def send(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("✅ تم إرسال جميع الرسائل.")
 
 # تشغيل البوت
-app = ApplicationBuilder().token("‏7753420109:AAHQ6-39T2hircmGgG6p56JTR0VwLbTk_A8").build()
+app = ApplicationBuilder().token("‏BOT_TOKEN").build()
 
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("add", add_user))
